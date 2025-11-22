@@ -1,0 +1,8 @@
+# Some more ls aliases
+alias ll='ls -alF'
+alias la='ls -AFhl --color=auto'
+alias l='ls -CF'
+
+# Alias to clean up pruned git branches
+alias git_clean_branches='git fetch -p && git branch -vv | awk "/: gone]/{print \$1}" | xargs git branch -D'
+
